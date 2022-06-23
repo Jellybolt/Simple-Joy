@@ -71,6 +71,8 @@ while True:
             if event.button == 7: # Menu
                 cantLook = not cantLook
                 
+            print(event)
+                
         if event.type == JOYAXISMOTION:
             # Move player with Left stick
             if event.axis < 2:
@@ -82,8 +84,8 @@ while True:
                 bg_color = newRandomColor()
             if event.value == (1, 0):
                 bg_auto_random = not bg_auto_random
-
-        print(event)
+            
+            print(event)
 
         if event.type == QUIT:
             pygame.quit()
