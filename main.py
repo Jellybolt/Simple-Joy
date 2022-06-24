@@ -1,7 +1,5 @@
-from msilib import CAB
 import random
 import sys
-from turtle import bgcolor
 import pygame
 from pygame.locals import *
 
